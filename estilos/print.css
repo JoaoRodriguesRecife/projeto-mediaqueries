@@ -5,21 +5,21 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+   
 }
 
-body,html{
+body{
     background-color: rgb(175, 175, 175);
+    font-family: Arial, Helvetica, sans-serif;
 }
 header{
     background-color: rgb(102, 98, 98);
-    padding: 30px 30px 0px 30px;
 }
 header h1 {
-    padding: 0px 0px 20px 0px ; 
-    text-align: center;
-    
+    padding: 10px; 
+    text-align: center;  
 }
+
 span#lista{
     background-color: black;
     color: aliceblue;
@@ -27,35 +27,35 @@ span#lista{
     text-align: center;
     padding: 10px;
 }
-    
+span#lista:hover {
+    background-color: rgb(255, 253, 253);
+    color: black;
+    cursor: pointer;
+}
 menu{
+    display: none;
+}
+
     
+menu > ul > li > a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    display: block;
+    text-align: center;
+    border-top: 1px solid white;
+    padding: 10px;
+    
+   }
+   a:hover{
+    background-color: azure;
+    color: black;
    }
 
 menu ul{
     list-style-type: none;
     text-align: center;
       
-}
-menu  li {
-    padding: 10px;
-    background-color: black;
-    border-bottom: 1px solid white;
-    margin-right: 10px;
-    
-    
-}
-ul :hover {
-    background-color: lightgrey;
-    
-}
-a:hover{
-    color: black;
-}
-
-menu a {
-    text-decoration: none;
-    color: white;
 }
 main{
     background-color: white;
@@ -66,4 +66,5 @@ main{
     text-indent: 10px;
     text-align: justify;
     line-height: 1.5em;
+    margin-top: 10px;
 }

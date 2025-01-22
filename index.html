@@ -10,8 +10,8 @@
 <body>
     <header>
         <h1>Media Queries</h1>
-        <span id="lista" class="material-symbols-outlined">menu</span>
-        <menu>
+        <span id="lista" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="men">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -29,6 +29,16 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sit nobis, eveniet deserunt similique laborum earum quasi quos labore blanditiis neque nulla nostrum maxime? Voluptate quam eligendi maxime enim accusantium?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error sint officia voluptatum modi, autem eius. Iusto sunt sed eligendi, nam praesentium voluptatem eveniet necessitatibus non consequuntur, ipsa laborum facere fugit!</p>
         </article>
     </main>
+    <script>
+        function clickMenu(){
+            if (men.style.display == 'block') {
+                men.style.display = 'none' 
+            } else{
+                men.style.display = 'block'
+            }
+        }
+          
+    </script>
     
 </body>
 </html>
