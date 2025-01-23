@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/media.css">
     <title>media qui</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Seja bem vindos</h1>
         <span id="hamburguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -32,6 +32,14 @@
         <p> Site Feito por Joao Rodrigues  </p>
     </footer>
     <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                list.style.display = 'block'
+            }else{
+                list.style.display = 'none'
+            }
+        }
+
         function clickMenu(){
             if (list.style.display == 'block'){
                 list.style.display = 'none'
