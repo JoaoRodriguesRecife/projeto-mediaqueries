@@ -11,7 +11,7 @@
     <header>
         <h1>Seja bem vindos</h1>
         <span id="hamburguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-        <menu>
+        <menu id="list">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -31,7 +31,13 @@
         <p> Site Feito por Joao Rodrigues  </p>
     </footer>
     <script>
-        function 
+        function clickMenu(){
+            if (list.style.display == 'block'){
+                list.style.display = 'none'
+            }else{ list.style.display = 'block'
+
+            }
+        }
     </script>
 
     
